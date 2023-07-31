@@ -1,0 +1,302 @@
+baseURL: "https://davidyshen.github.io"
+languageCode: "en-us"
+title: "David Y. Shen"
+theme: hugo-profile
+enableEmoji: true
+
+Paginate: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    # - identifier: cv
+    #   name: CV
+    #   title: My CV
+    #   url: /cv
+    #   weight: 1
+
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 3
+
+  # Dropdown menu
+  # - identifier: dropdown
+  #   title: Example dropdown menu
+  #   name: Dropdown
+  #   weight: 3
+  # - identifier: dropdown1
+  #   title: example dropdown 1
+  #   name: example 1
+  #   url: /#
+  #   parent: dropdown
+  #   weight: 1
+  # - identifier: dropdown2
+  #   title: example dropdown 2
+  #   name: example 2
+  #   url: /#
+  #   parent: dropdown
+  #   weight: 2
+
+params:
+  title: "David Y. Shen"
+  description: David's Personal Site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  theme:
+    disableThemeToggle: false
+    # defaultTheme: "light" # dark
+
+  # font:
+  #   fontSize: 1.5rem # default: 1rem
+  #   fontWeight: 500 # default: 400
+  #   lineHeight: 1 # default: 1.5
+  #   textAlign: right # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  # navbar:
+  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+  #   brandName: "Profile" # Brand name for the brand | default is the title variable
+
+  #   menus:
+  #     disableAbout: true
+  #     disableExperience: true
+  #     disableEducation: true
+  #     disableProjects: true
+  #     disableAchievements: true
+  #     disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "David."
+    subtitle: "I research and model ecosystems"
+    content: "Spatial scientist at Natural Capital Research. I use novel computational methods to model biodiversity and ecosystems around the world. Former postgraduate research associate at Yale University. UCL graduate."
+    image: /images/profile2.jpg
+    button:
+      enable: true
+      name: "My CV"
+      url: "/files/CV.pdf"
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/davidyshen
+        - icon: fab fa-twitter
+          url: https://twitter.com/__davidshen
+        - icon: fab fa-instagram
+          url: https://instagram.com/__davidshen
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/dyshen/
+        - icon: fab fa-orcid
+          url: https://orcid.org/0000-0001-7995-3290
+        - icon: fab fa-researchgate
+          url: https://www.researchgate.net/profile/David-Shen-7
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/presenter.jpeg"
+    content: |
+      I'm an early career researcher modelling ecosystem services. I have a MSci degree in Biodiversity and Conservation from University College London, and an interest in the interactions between humans and ecosystems. I'm currently working as a spatial scientist with [Natural Capital Research](https://www.natcapresearch.com/) in London modelling ecosystem services to help incorporate nature dependency into the global financial system.
+
+    skills:
+      enable: true
+      title: |
+        Some tools I've used in my previous work:
+
+      items:
+        - "R"
+        - "Python"
+        - "Microsoft Azure"
+        - "AWS"
+        - "Docker"
+        - "Slurm"
+        - "Metaflow"
+        - "QGIS"
+
+  # Experience
+  experience:
+    enable: true
+    items:
+      - job: "Spatial Scientist"
+        company: "Natural Capital Research"
+        companyUrl: "https://www.natcapresearch.com/"
+        date: "August 2022 - present"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        info:
+          enable: false
+          content: Test
+        content: "I am part of the carbon modelling team at NCR, where I model the carbon density of vegetation as well as rates of carbon sequestration into vegetation and soils. I work with global carbon and forest data, including GEDI."
+
+      - job: "Postgraduate Research Associate"
+        company: "Yale University BGC"
+        companyUrl: "https://bgc.yale.edu/"
+        date: "August 2021 - July 2022"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+          content:
+        content: |
+          I was part of a large team effort to produce high-resolution, 1km<sup>2</sup> maps of biodiversity across North America for over 4000 species, including mammals, reptiles, amphibians, ants, butterflies and dragonflies.
+          These maps will be used to inform US governmental conservation strategies as part of the 30 by 30 project.
+
+          - Contributed additions to the modelling workflow
+          - Helped containerise the workflow using Docker
+          - Massively parallelised the workflow using Slurm and Microsoft Azure to run models for hundreds of species at once
+          - Also member of the centre seminar committee
+
+  # Education
+  education:
+    enable: true
+    # index: true
+    items:
+      - title: "Master in Science in Biodiversity and Conservation"
+        school:
+          name: "University College London"
+          url: "https://www.ucl.ac.uk/"
+        date: "2017 - 2021"
+        GPA: "First Class Honours"
+        content: |-
+          Courses include: 
+            - Computational Biology
+            - Evolutionary Genetics
+            - Ecological Patterns and Processes
+            - Dynamic Biological Systems
+            - Plant Evolution and Ecology
+
+          Extracurricular Activities:
+            - Academic secretary for UCL Biology Society
+            - ChangeMakers project member
+            - Social secretary for UCL Karate Club
+      - title: "Study Abroad Exchange Program"
+        school:
+          name: "University of Queensland"
+          url: "https://www.uq.edu.au/"
+        date: "2019 - 2020"
+        content: |-
+          Courses include:
+            - Landscape Ecology
+            - Conservation and Wildlife Biology
+            - Macroecology and Biogeography
+            - Tropical Marine Biology
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: true
+    items:
+      - title: Double poster prize winner
+        content: "Winner of the best poster prize at the International Biogeography Society Biannual conference in Vancouver, June 2022 (awarded $100), and runner up for the student poster prize at the British Ecological Society Annual Meeting in Liverpool, December 2021 (awarded £100). Click here to check out the poster!"
+        url: /files/BES_IBS_Poster.pdf
+
+  # Publications
+  publications:
+    enable: true
+    items:
+      - title: Potential decline in the distribution and food provisioning services of the mopane worm (Gonimbrasia belina) in southern Africa
+        content: My first first-author paper, published in Frontiers of Biogeography, a peer-reviewed journal by the Internaional Biogeography Society. This was based on research I conducted as part of my final year project at UCL.
+        image: /images/projects/FoB_publication.png
+        featured:
+          name: Read the paper
+          link: https://escholarship.org/uc/item/3s37q6mg
+
+      - title: Contributed to an article written about my work in Mongabay
+        content: Mongabay is a non-profit conservation and environmental science news platform. They wrote an article about my work modelling the mopane worm, and the potential impacts of climate change on its distribution and food provisioning services.
+        image: /images/projects/mongabay_screenshot.png
+        featured:
+          name: Read the article
+          link: https://news.mongabay.com/2023/06/southern-african-caterpillar-that-feeds-millions-may-be-next-climate-casualty/
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+        # links:
+        #   - icon: fa fa-envelope
+        #     url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/hugo-profile
+        #   - icon: fab fa-twitter
+        #     url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      # - title: Image Converter
+      #   content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+      #   image: /images/projects/converter.jpg
+      #   featured:
+      #     name: Demo
+      #     link: https://django-converter.herokuapp.com
+      #   # badges:
+      #   #   - "Django"
+      #   #   - "Bootstrap"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/converter
+
+      # - title: Hugo Profile V2
+      #   content: A clean and simple Hugo template for personal portfolio and blog.
+      #   image: /images/projects/profile2.jpg
+      #   featured:
+      #     name: Demo V2
+      #     link: https://hugo-profile-2.netlify.app
+      #   # badges:
+      #   #   - "Hugo"
+      #   #   - "Bootstrap"
+      #   #   - "Javascript"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    content: If you're interested in my work, or want to collaborate on a project, get in touch below!
+    email: contact@davidshen.co.uk
+    btnName: Email me
+
+  footer:
+    recentPosts: false
+    socialNetworks:
+      github: https://github.com/davidyshen
+      linkedin: https://www.linkedin.com/in/dyshen/
+      twitter: https://twitter.com/__davidshen
