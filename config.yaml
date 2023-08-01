@@ -115,8 +115,6 @@ params:
           url: https://github.com/davidyshen
         - icon: fab fa-twitter
           url: https://twitter.com/__davidshen
-        - icon: fab fa-instagram
-          url: https://instagram.com/__davidshen
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/dyshen/
         - icon: fab fa-orcid
