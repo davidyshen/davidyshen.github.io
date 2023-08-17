@@ -13,7 +13,11 @@
                     {{ .Site.Params.hero.subtitle }}
                 </h3>
                 <p class="hero-content">
-                    {{ .Site.Params.hero.content | markdownify }}
+                    {{ .Site.Params.hero.content.main | markdownify }}
+                </p>
+                <p>
+                    {{ .Site.Params.hero.content.sub | markdownify }}
+                    
                 </p>
                 <div class="row">
                     <div class="col-auto h-100">
