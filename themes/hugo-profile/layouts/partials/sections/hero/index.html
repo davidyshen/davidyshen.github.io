@@ -12,17 +12,17 @@
                 <h3>
                     {{ .Site.Params.hero.subtitle }}
                 </h3>
-                <p class="hero-content">
+                <p class="hero-content" style="font-family:'Hanken Grotesk';">
                     {{ .Site.Params.hero.content.main | markdownify }}
                 </p>
-                <p>
+                <p style="font-family:'Hanken Grotesk';">
                     {{ .Site.Params.hero.content.sub | markdownify }}
                     
                 </p>
                 <div class="row">
                     <div class="col-auto h-100">
                         {{ if .Site.Params.hero.button.enable }}
-                        <a href="{{ .Site.Params.hero.button.url }}" class="btn">
+                        <a href="{{ .Site.Params.hero.button.url }}" class="btn secondary-font">
                             {{ .Site.Params.hero.button.name }}
                         </a>
                         {{ end }}

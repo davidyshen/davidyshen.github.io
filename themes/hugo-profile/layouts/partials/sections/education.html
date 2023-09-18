@@ -1,8 +1,8 @@
 {{ if .Site.Params.education.enable | default false }}
 <section id="education" class="py-5">
     <div class="container">
-        <h3 class="text-center">Education</h3>
-        <div class="row justify-content-center py-5">
+        <h3 class="text-center primary-font">Education</h3>
+        <div class="row justify-content-center py-5 secondary-font">
             {{ $indexMenu := .Site.Params.education.index }}
             {{ range $index, $element := .Site.Params.education.items }}
             <div class="col-12 p-0">
@@ -23,7 +23,7 @@
                                 <div class="float-end">
                                     <small>{{ .date }}</small>
                                 </div>
-                                <h5 class="card-title">{{ .title }}</h5>
+                                <h5 class="card-title primary-font">{{ .title }}</h5>
                                 
                                 {{ if .school.url }}
                                 <a href="{{ .school.url }}" target="_blank">

@@ -3,6 +3,10 @@ body {
     font-family: 'Hanken Grotesk', sans-serif, !important;
 }
 
+.text-center {
+    font-family: 'Space Grotesk', sans-serif, !important;
+}
+
 /* secondary font */
 .secondary-font,
 #secondary-font {

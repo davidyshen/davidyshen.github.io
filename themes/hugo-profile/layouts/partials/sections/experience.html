@@ -1,14 +1,14 @@
 {{ if .Site.Params.experience.enable | default false }}
 <section id="experience" class="py-5">
     <div class="container">
-        <h3 class="text-center">Experience</h3>
+        <h3 class="text-center primary-font">Experience</h3>
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-8 col-lg-8 py-5">
                 <div class="experience-container px-3 pt-2">
                     <ul class="nav nav-pills mb-3 bg-transparent" id="pills-tab" role="tablist">
                         {{ range $index, $element := .Site.Params.experience.items }}
                         {{ if (eq $index 0) }}
-                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                        <li class="nav-item px-1 bg-transparent secondary-font" role="presentation">
                             <div 
                                 class="nav-link active bg-transparent" 
                                 aria-selected="true" 
@@ -25,7 +25,7 @@
                         {{ else }}
                         <li class="nav-item px-1 bg-transparent" role="presentation">
                             <div 
-                                class="nav-link bg-transparent" 
+                                class="nav-link bg-transparent secondary-font" 
                                 aria-selected="true" 
                                 type="button"
                                 role="tab" 
@@ -50,10 +50,10 @@
                             aria-labelledby='pills-{{ replace .company " " "-" }}-{{ replace .date " " "-" }}-tab'
                         >
                             <div>
-                                <span class="h4">{{ .job }}</span>
+                                <span class="h4 primary-font">{{ .job }}</span>
                                 <small>-</small>
                                 <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
-                                <div class="pb-1">
+                                <div class="pb-1 secondary-font">
                                     <small>{{ .date }}</small>
                                     {{ if .info.enable | default true }}
                                     <span class="p-2">
@@ -77,8 +77,10 @@
                                 </div>
                                 {{ end }}
                             </div>
-
-                            {{ .content | markdownify}}
+                            <div class="pt-2 secondary-font">
+                                {{ .content | markdownify}}
+                            </div>
+                            
                         </div>
                         {{ else }}
                         <div 
@@ -88,11 +90,11 @@
                             aria-labelledby='pills-{{ replace .company " " "-" }}-{{ replace .date " " "-" }}-tab'
                         >
                             <div>
-                                <span class="h4">{{ .job }}</span>
+                                <span class="h4 primary-font">{{ .job }}</span>
                                 <small>-</small>
                                 <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
                                 
-                                <div class="pb-1">
+                                <div class="pb-1 secondary-font">
                                     <small>{{ .date }}</small>
                                     {{ if .info.enable | default true }}
                                     <span class="p-2">
@@ -117,7 +119,7 @@
                                 {{ end }}
                             </div>
 
-                            <div class="pt-2">
+                            <div class="pt-2 secondary-font">
                                 {{ .content | markdownify}}
                             </div>
                         </div>
