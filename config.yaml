@@ -106,7 +106,7 @@ params:
     content:
       main: "Spatial scientist at Natural Capital Research. I use novel computational methods to model biodiversity and ecosystems around the world."
       sub: "Former postgraduate research associate at Yale University. UCL graduate."
-    image: /images/profile2.jpg
+    image: /images/profile.jpg
     button:
       enable: true
       name: "My CV"
