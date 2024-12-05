@@ -104,8 +104,8 @@ params:
     title: "David."
     subtitle: "I research and model ecosystems"
     content:
-      main: "Spatial scientist at Natural Capital Research. I use novel computational methods to model biodiversity and ecosystems around the world."
-      sub: "Former postgraduate research associate at Yale University. UCL graduate."
+      main: "[PhD student at Aarhus University in Denmark](/#education). I model biodiversity and ecosystem restoration and its interactions with legislation."
+      sub: "Formerly at Natcap and Yale University. University College London graduate."
     image: /images/profile.jpg
     button:
       enable: true
@@ -115,8 +115,6 @@ params:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/davidyshen
-        - icon: fab fa-twitter
-          url: https://twitter.com/__davidshen
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/dyshen/
         - icon: fab fa-orcid
@@ -157,7 +155,7 @@ params:
       - job: "Spatial Scientist"
         company: "Natural Capital Research"
         companyUrl: "https://www.natcapresearch.com/"
-        date: "August 2022 - present"
+        date: "August 2022 - June 2024"
         featuredLink:
           enable: false
           name: "View the project"
@@ -166,13 +164,13 @@ params:
           enable: false
           content: Test
         content: |
-          I am part of the Nature Engine team at Natcap, where I build models and metrics for double materiality analysis of agriculture and biodiversity and ecosystems. These models and metrics are core parts of the nature impact reporting product in development, to be released in time for when nature impact regulations and frameworks come into effect with the aim of reducing business impact on nature.
+          I was part of the Nature Engine team at Natcap, where I built models and metrics for double materiality analysis of agriculture and biodiversity and ecosystems. These models and metrics were core parts of the nature impact reporting product for compliance with the EU Corporate Sustainability Reporting Directive (CSRD), the Taskforce for Nature related Financial Disclosures (TNFD), and Science Based Targets Network (SBTN).
 
-          Models and metrics are aligned to major regualtions and frameworks, including:
-
-          - EU CSRD (Corporate Sustainability Reporting Directive)
-          - TNFD (Taskforce for Nature Related Finanical Disclosures)
-          - SBTN (Science Based Targets Network)
+          I developed metrics and methods for:
+          - Land use change
+          - Habitat fragmentation
+          - Remote sensing of land impact
+          - Value chain analysis of nature impact
 
       - job: "Postgraduate Research Associate"
         company: "Yale University BGC"
@@ -198,6 +196,19 @@ params:
     enable: true
     # index: true
     items:
+      - title: "PhD in Biology"
+        school:
+          name: "Aarhus University"
+          url: "https://www.au.dk/"
+        date: "2024 - Present"
+        content: |-
+          Thesis title: Enabling large scale nature restoration under the EU Nature Restoration Law
+          - Chapter 0: Nature restoration legislation means redefining targets and forecasting progress (Perspective paper in preparation for submission)
+          - Chapter 1: Mapping the biodiversity potential of Europe
+          - Chapter 2: Spatial prioritisation of nature restoration in Europe
+          - Chapter 3: Predicting restoration outcomes and uncertainties
+
+          Teaching assistant for Statistics and Geospatial Modelling (Master's level)
       - title: "Master in Science in Biodiversity and Conservation"
         school:
           name: "University College London"
