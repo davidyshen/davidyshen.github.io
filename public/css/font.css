@@ -1,0 +1,26 @@
+/* Default font for body */
+body {
+    font-family: 'Hanken Grotesk', sans-serif, !important;
+}
+
+.text-center {
+    font-family: 'Space Grotesk', sans-serif, !important;
+}
+
+/* secondary font */
+.secondary-font,
+#secondary-font {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* primary font */
+.primary-font,
+#primary-font {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Default font */
+.default-font,
+#default-font {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
