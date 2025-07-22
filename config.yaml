@@ -3,10 +3,6 @@ languageCode: "en-us"
 title: "David Y. Shen"
 theme: hugo-profile
 enableEmoji: true
-# Publishes to docs folder for GitHub Pages
-publishDir: "docs"
-
-Paginate: 3
 
 markup:
   goldmark:
