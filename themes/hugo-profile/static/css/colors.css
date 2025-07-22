@@ -1,0 +1,37 @@
+/* Color Variables for Light and Dark Mode */
+:root {
+    /* Light Mode Colors */
+    --text-color: #1A2F38;
+    --text-secondary-color: #1E7167;
+    --background-color: #F7EAC9;
+    --secondary-background-color: #1A2F38;
+    --primary-color: #E24D28;
+    --secondary-color: #F6BD8D;
+
+    /* Dark Mode Colors */
+    --text-color-dark: #ffffff;
+    --text-secondary-color-dark: #F7EAC9;
+    --background-color-dark: #1A2F38;
+    --secondary-background-color-dark: #212529;
+    --primary-color-dark: #E24D28;
+    --secondary-color-dark: #1E7167;
+}
+
+/* 
+You can customize the colors above by changing the hex values.
+These colors will be automatically applied to both light and dark modes.
+
+Color Guide:
+- text-color: Main text color
+- text-secondary-color: Secondary/muted text color
+- background-color: Main background color
+- secondary-background-color: Cards, panels, secondary areas
+- primary-color: Accent color for links, buttons, highlights
+- secondary-color: Alternative accent color
+
+Example custom colors:
+--primary-color: #10b981; (Green)
+--primary-color: #f59e0b; (Amber)
+--primary-color: #ef4444; (Red)
+--primary-color: #8b5cf6; (Purple)
+*/
