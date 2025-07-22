@@ -1,5 +1,5 @@
-baseURL: "https://davidyshen.github.io"
-languageCode: "en-us"
+baseURL: "https://www.davidyshen.com"
+languageCode: "en-gb"
 title: "David Y. Shen"
 theme: hugo-profile
 enableEmoji: true
@@ -307,7 +307,7 @@ params:
   contact:
     enable: true
     content: If you're interested in my work, or want to collaborate on a project, get in touch below!
-    email: contact@davidshen.co.uk
+    email: contact@davidyshen.com
     btnName: Email me
 
   footer:
